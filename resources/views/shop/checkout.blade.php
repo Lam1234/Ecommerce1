@@ -17,14 +17,14 @@
 			<div class="col-xs-12">
 				<div class="form-group">
 					<label for="name">Name</label>
-					<input type="text" id="name" class="form-control" required>
+					<input type="text" id="name" class="form-control" required name="name">
 				</div>
 			</div>
 
 			<div class="col-xs-12">
 				<div class="form-group">
 					<label for="address">Address</label>
-					<input type="text" id="address" class="form-control" required>
+					<input type="text" id="address" class="form-control" required name="address">
 				</div>
 			</div>
 			<hr>
@@ -37,7 +37,7 @@
 			<div class="col-xs-12">
 				<div class="form-group">
 					<label for="card-number">Credit Card Number</label>
-					<input type="text" id="card-number" class="form-control" required>
+					<input type="text" id="card-number" class="form-control" required name="card-number">
 				</div>
 			</div>
 
@@ -46,14 +46,14 @@
 					<div class="col-xs-6">
 						<div class="form-group">
 							<label for="card-expiry-month">Expiration Month</label>
-							<input type="text" id="card-expiry-month" class="form-control" required>
+							<input type="text" id="card-expiry-month" class="form-control" required name="card-expiry-month"> 
 						</div>
 					</div>
 
 					<div class="col-xs-6">
 						<div class="form-group">
 							<label for="card-expiry-year">Expiration Year</label>
-							<input type="text" id="card-expiry-year" class="form-control" required>
+							<input type="text" id="card-expiry-year" class="form-control" required name="card-expiry-year">
 						</div>
 					</div>
 
@@ -63,7 +63,7 @@
 			<div class="col-xs-12">
 				<div class="form-group">
 					<label for="card-cvc">CVC</label>
-					<input type="text" id="card-cvc" class="form-control" required>
+					<input type="text" id="card-cvc" class="form-control" required name="card-cvc">
 				</div>
 			</div>
 			</div>

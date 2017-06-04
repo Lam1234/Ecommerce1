@@ -5,6 +5,8 @@ var $form = $('#checkout-form');
 $form.submit(function(event){
 	$('#charge-error').addClass('hidden');
 	$form.find('button').prop('disable',true);
+
+
 	Stripe.card.createToken({
   number: $('#card-number').val(),
   cvc: $('#card-cvc').val(),
@@ -26,6 +28,7 @@ function stripeResponseHandler(status,response){
 		$form.find('button').prop('disable',false);
 	}else{
 		var token = response.id;
+		console.log("token" + token);
 		// Insert the token into the form so it gets submitted to the server:
 		$form.append($('<input type="hidden" name="stripeToken" />').val(token));
 
